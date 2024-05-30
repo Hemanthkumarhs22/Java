@@ -1,0 +1,46 @@
+abstract class Shape{
+float areasq,arearect,areacir;
+float a,length,breadth,r;
+abstract void area();
+}
+class Square extends Shape
+{
+void area()
+{
+a= 2.0f;
+areasq=a*a;
+System.out.println(“The area of square is=”+areasq);
+}
+}
+class Rectangle extends Shape
+{
+void area()
+{
+length=2.0f;
+breadth=2.2f;
+arearect=length*breadth;
+System.out.println(“The area of rectangle is=”+arearect);
+}
+}
+class Circle extends Shape
+{
+void area()
+{
+r= 4.0f;
+areacir=3.14f*r*r;
+System.out.println(“The area of circlee is=”+areacir);
+}
+}
+class Geo
+{
+  public static void main(String args[])
+{
+Shape s;
+s= new Square();
+s.area();
+s=new Rectangle();
+s.area();
+s=new Circle();
+s.area();
+}
+}
