@@ -1,0 +1,22 @@
+class Student
+{
+int id;
+String name;
+Student()
+{
+System.out.println(“This is a smallest constructor”);
+}
+Student(int i,String n)
+{
+id=i;
+name=n;
+}
+public static void main(String args[])
+{
+Student s=new Student();
+System.out.println(“\n Default constructor values:”);
+
+Student s=new Student(12,”Ram”);
+System.out.println(“\n Parameterized constructor values:”);
+System.out.println(“\n student id:” +s.id +”\n student name:” +s.name);
+}}
