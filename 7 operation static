@@ -1,0 +1,31 @@
+public class OperationStatic{
+public static void main(String args[])
+{
+double a=Operation.add(12.0,13.0);
+double b=Operation.sub(25.0,13.0);
+double c=Operation.mul(23.0,2.0);
+double d=Operation.divide(25.0,5.0);
+System.out.println(“Addition=”+a);
+System.out.println(“Subtraction=”+b);
+System.out.println(“Multiplication=”+c);
+System.out.println(“Division=”+d);
+}}
+class Operation{
+static double add(double x,double y)
+{
+return(x+y);
+}
+static double sub(double x,double y)
+{
+return(x-y);
+}
+static double mul(double x,double y)
+{
+return(x*y);
+}
+static double divide(double x,double y)
+{
+return(x/y);
+}
+}
+}
