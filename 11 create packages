@@ -1,0 +1,21 @@
+package figure;
+public class square{
+float side;
+float area;
+public square(float a)
+{
+side=a;
+}
+public void calarea(){
+area=side*side;
+System.out.println(“Area of square:”+area);
+}
+}
+import figure.square;
+public class A{
+public static void main(String args[])
+{
+square s1=new square(20);
+s1.calarea();
+}
+}
