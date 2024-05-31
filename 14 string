@@ -1,0 +1,22 @@
+public class Stringopr
+{
+public static void main(String args[])
+{
+String s1="Software Developer";
+String s2=new String("Software Developer");
+System.out.println("The Original String is: "+s1);
+System.out.println("The Original String is: "+s2);
+System.out.println("The String is converted to Uppercase:
+"+s1.toUpperCase());
+System.out.println("The String is converted to Lowercase:
+"+s1.toLowerCase());
+System.out.println("The First Occurance of 'f' is: "+s1.indexOf('f'));
+System.out.println("The Last Occurance of 'w' is: "+s1.indexOf('w'));
+System.out.println(s1+"=="+s2+"!"+s1.equals(s2));
+System.out.println("The Character at position 6 is: "+s1.charAt(6));
+System.out.println("The Substring extracted from position 6 to 18 is:
+"+s1.substring(9,18));
+System.out.println("The number of character in" +s1+ "is:
+"+s1.length());
+}
+}
