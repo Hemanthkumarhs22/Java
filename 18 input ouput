@@ -1,0 +1,30 @@
+import java.io.*;
+public class FileInputOutputExample
+{
+ public static void main(String args[])
+{
+ String inputFileName = "input.txt";
+ String outputFileName = "output.txt";
+ try
+{
+ FileInputStream fis = new FileInputStream(inputFileName);
+ FileOutputStream fos = new FileOutputStream(outputFileName);
+ int data;
+ while ((data = fis.read()) != -1)
+{
+ fos.write(data);
+ }
+ fis.close();
+ fos.close();
+ System.out.println("Data has been written to " + outputFileName);
+ }
+catch (FileNotFoundException e)
+{
+ System.out.println("File not found: " + e.getMessage());
+ }
+catch (IOException e)
+{
+ System.out.println("Error reading/writing file: " + e.getMessage());
+ }
+ }
+}
