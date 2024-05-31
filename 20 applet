@@ -1,0 +1,42 @@
+File Name: AppletLifeCycleExample.java
+import java.applet.Applet;
+import java.awt.Graphics;
+public class AppletLifeCycleExample extends Applet
+
+{
+ public void init()
+{
+ System.out.println("init() method called.");
+ }
+ public void start()
+{
+ System.out.println("start() method called.");
+ }
+ public void paint(Graphics g)
+{
+ System.out.println("paint() method called.");
+ g.drawString("Hello, world!", 50, 25);
+ }
+ public void stop()
+{
+ System.out.println("stop() method called.");
+ }
+ public void destroy()
+{
+ System.out.println("destroy() method called.");
+ System.out.println("destroy() method called.");
+ }
+}
+/* <applet code="AppletLifeCycleExample.class" width="300"
+height="200"></applet> */
+File Name: AppletLifeCycleExample.html
+<html>
+ <head>
+ <title>Applet Life Cycle Example</title>
+ </head>
+ <body>
+
+ <applet code="AppletLifeCycleExample.class" width="300"
+height="200"></applet>
+</body>
+</html>
